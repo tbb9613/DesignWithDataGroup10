@@ -22,4 +22,5 @@ input[type = text] {
     width: 80%;
     height: 200px;
     text-align: start;
+    font-size: larger;
 }
