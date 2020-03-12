@@ -27,10 +27,10 @@ def success(name):
 @app.route('/login',methods = ['POST', 'GET'])
 def login():
    if request.method == 'POST':
-      user = request.form['nm']
+      user = request.form['textContent']
       return redirect(url_for('success',name = user))
    else:
-      user = request.args.get('nm')
+      user = request.args.get('textContent')
       return redirect(url_for('success',name = user))
 
 if __name__ == '__main__':
