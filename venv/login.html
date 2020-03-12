@@ -1,21 +1,44 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-03-12 19:00:45
+ * @LastEditTime: 2020-03-12 20:47:52
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \flask nlp\venv\login.html
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <title>Qwitter</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
    <div id="mainbody">
+      <div class="col-left">
+         <div class="left-button"></div>
+         <div class="left-button">Home</div>
+         <div class="left-button">Explore</div>
+         <div class="left-button">Notifications</div>
+         <div class="left-button">Messages</div>
+         <div class="left-button">Bookmarks</div>
+         <div class="left-button">Lists</div>
+         <div class="left-button">Profile</div>
+      </div>
+      <div class="col-line"></div>
       <div class="center">
          <h2>Enter your post</h2>
+         <form action = "http://localhost:5000/login" method = "post">
+            <textarea name = "textContent" ></textarea>
+            <input type = "submit" value = "POST" >
+         </form>
       </div>
-      <form action = "http://localhost:5000/login" method = "post">
-         <textarea name = "textContent" ></textarea>
-         <input type = "submit" value = "POST" >
-      </form>
+      <div class="col-line"></div>
+      <div class="col-right">
+         <div class="search"></div>
+         <div class="right-trends">Trends for you</div>
+      </div>
    </div>
 </body>
 </html>

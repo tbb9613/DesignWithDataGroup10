@@ -1,20 +1,74 @@
 .body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #mainbody{
     position:absolute;
     left:0;
     right:0;
     margin:0 auto;
-    
 }
 
 .center{
-    margin-left :auto;
-    margin-right: auto;
+    width: 54%;
+    float: left;
+    height: 450px;
+    /* margin-left :auto;
+    margin-right: auto; */
     /* width: 80%; */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-left{
+    width: 22.9%;
+    float: left;
+    height: 700px;
+    background-color: white;
+}
+
+.col-right{
+    width: 22.9%;
+    float: right;
+    height: 700px;
+    background-color: white;
+}
+
+.col-line{
+    width: 0.1%;
+    float: left;
+    height: 700px;
+    background-color: rgb(214, 214, 214);
+}
+
+.left-button{
+    width: 60%;
+    margin-right: 10%;
+    height: 60px;
+    float: right;
+    background-color: white;
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.search{
+    width: 85%;
+    margin-left: 5%;
+    height: 60px;
+    float: left;
+    background-color: white;
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.right-trends{
+    width: 85%;
+    margin-left: 5%;
+    height: 400px;
+    float: left;
+    background-color: rgb(239, 244, 247);
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
 }
 
 input[type=submit] {
