@@ -1,0 +1,5 @@
+*.pyc
+/venv/lib/*
+wiki.en.text.model.trainables.syn1neg.npy
+wiki.en.text.model.wv.vectors.npy
+wiki.en.text.vector
