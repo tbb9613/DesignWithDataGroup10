@@ -7,13 +7,15 @@
    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-   <form action = "http://localhost:5000/login" method = "post">
-      <p>Enter Name:</p>
-      <input type = "text" name = "textContent" >
-      <div class="center">
-         <input type = "submit" value = "submit" >
-      </div>
 
-   </form>
+   <div id="mainbody">
+      <div class="center">
+         <h2>Enter your post</h2>
+      </div>
+      <form action = "http://localhost:5000/login" method = "post">
+         <textarea name = "textContent" ></textarea>
+         <input type = "submit" value = "POST" >
+      </form>
+   </div>
 </body>
 </html>
