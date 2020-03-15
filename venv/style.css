@@ -1,23 +1,24 @@
-.body{
+body{
     font-family: Arial, Helvetica, sans-serif;
+    /*background-color: #CCCCCC;*/
 }
 
-#mainbody{
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0 auto;
-}
+/*#mainbody{*/
+/*    position:absolute;*/
+/*    left:0;*/
+/*    right:0;*/
+/*    margin:0 auto;*/
+/*}*/
 
 .center{
-    width: 54%;
-    float: left;
-    height: 450px;
-    /* margin-left :auto;
-    margin-right: auto; */
-    /* width: 80%; */
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .col-left{
@@ -71,27 +72,64 @@
     color: rgb(100, 100, 100);
 }
 
-input[type=submit] {
-    font-size: 1.5em;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: rgb(19, 141, 255);
-    color: white;
-    box-shadow: none;
-    border: none;
-    width: 80%;
-    display: block;
-    position: relative;
+.wrapper{
+    border: 2px rgba(17, 143, 255, 0.82) solid;
+    border-radius: 35px;
+    box-shadow: -50px -50px rgba(0, 115, 255, 0.25);
+    background-color: white;
+}
+
+#title{
+    /*border: 1px #0078e7 solid;*/
+    width: 30%;
+    /*padding: 5px;*/
+    /*background-color: #0078e7;*/
+    color: #0078e7;
+    border-top-left-radius: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#textWrapper{
+    margin: 10px 1%;
+    width: 98%;
+
 }
 
 textarea {
     display: block;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
+    margin: 10%;
+    width: 96%;
+    padding: 2%;
     height: 200px;
     text-align: start;
     font-size: 1.5em;
     resize: none;
     overflow: auto;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#post {
+    font-size: 1em;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: rgb(19, 141, 255);
+    border: rgb(19, 141, 255) 1px solid;
+    color: white;
+    box-shadow: none;
+    /*border: none;*/
+    width: 20%;
+    display: block;
+    /*position: relative;*/
+    float: right;
+    border-bottom-right-radius: 33px;
+}
+
+#post:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #0078e7;
+    color: white;
 }
