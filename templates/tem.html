@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <p>The Keywords are: </p>
+    <p>{{keywords_2}}</p>
+    <p>The associated words are: </p>
+    <p>{{asso_words_2}}</p>
+
+</body>
+<script type="text/javascript">
+   function Kindle()
+   {
+       $.ajax(
+      {
+         type: "POST",
+         url: "/kindle",
+         data:{{keyword}}
+         success: function(data)
+         {
+             $("#content-wrapper").html(data);
+         },
+         error: function (xhr, status, error) {
+            console.log(error);
+        }
+      });
+   }
+</script>
+
+</html>
+
