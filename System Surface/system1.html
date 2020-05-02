@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+	<link rel="stylesheet" href="system1.css" type="text/css" />
+	
+	
+</head>
+
+<body background="background.gif">
+	<h1 class ="h1">Processing and Preparing for sending your data</h1>
+<div class="row">
+  <div class="column">
+    <h2 class="title">Keyword</h2>
+	<img src="circle.gif" id="a"></img>
+    <p class="step1" id="text1">Parsing Keyword from the Text</p>
+	<p class="step2" id="text2">Draw the word co-occurrence graph and Give Scores</p>
+	<p class="step3" id="text3">Extracted the top T scoring candidates as keywords</p>
+  </div>
+  
+  <div class="column">
+    <h2 class="title">Algorithm</h2>
+	<img src="circle.gif" id="b"></img>
+    <p class="step4" id="text4">Building word list depend on corpus and a special tree model depend on word frequency .</p>
+	<p class="step5" id="text5">Train the model through word vectors which generate from last step and enter them into the model.</p>
+	<p class="step6" id="text6">Depending on the context of the word to obtain the accurate path in the tree model and update the vector.</p>
+	
+  </div>
+</div>
+<div class="total_framework">
+	
+	<textarea onKeyUp="javascript:checkWord(this);" onMouseDown="javascript:checkWord(this);" name="content" style="overflow-y:scroll" id="textarea"></textarea>
+	<div id="tips_area">
+	<p id="tips">*Please enter the code you got from the last step.</p>
+	</div>
+	
+    <progress id="Download" value="" max="100"></progress>
+	<a href="system2.html">
+	<button type="button">Confirm</button>
+	</a>
+	
+</div>
+<script src="system1.js"></script>
+</body>
+</html>
