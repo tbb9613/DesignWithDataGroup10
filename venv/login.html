@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-12 19:00:45
- * @LastEditTime: 2020-04-24 17:32:41
+ * @LastEditTime: 2020-05-03 00:28:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \flask nlp\venv\login.html
@@ -17,6 +17,7 @@
 </head>
 <body>
 <div class="pure-g">
+
 <!--      <div class="pure-u-1-5">-->
 <!--         <div class="col-left">-->
 <!--            <div class="left-button"></div>-->
@@ -29,8 +30,6 @@
 <!--            <div class="left-button">Profile</div>-->
 <!--         </div>-->
 <!--      </div>-->
-
-
 <!--      <div class="col-line"></div>-->
 
       <div class="pure-u-1-2 center wrapper">
@@ -38,18 +37,14 @@
 <!--            <div id="title">-->
 <!--               <p>Enter your post</p>-->
 <!--            </div>-->
-            <form action = "http://localhost:5000/login" method = "post">
-               <div id="textWrapper">
-                  <textarea name = "textContent" ></textarea>
-               </div>
-
-               <input id = "post" type = "submit" value = "POST" >
-            </form>
-<!--         </div>-->
-
+         <form action = "http://localhost:5000/login" method = "post">
+            <div id="textWrapper">
+               <textarea name = "textContent" ></textarea>
+            </div>
+            <input id = "post" type = "submit" value = "POST" >
+         </form>
       </div>
-
-
+<!-- </div> -->
 
 <!--      <div class="col-line"></div>-->
 <!--      <div class="pure-u-1-5 col-right">-->
