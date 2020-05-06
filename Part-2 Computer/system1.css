@@ -1,11 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
-body{
+body, html{
 		/*background-image：url(./background2.gif) no-repeat;*/
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
-		background-size: 100%;
+		font-family: 'Roboto Mono', monospace;
+		/* background-size: 100%; */
 }
 
 .total_framework {
@@ -27,33 +28,42 @@ body{
 	width: 78%;
 	height: 40px;
 	margin-left: 10%;
-
+	overflow-y: auto;
 	display: block;
 	padding: 1%;
 	text-align: start;
 	font-size: 1.5em;
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: 'Press Start 2P', cursive;
 	resize: none;
 	overflow: auto;
-	border-radius: 20px;
-	border: none;
+	/* border-radius: 10px; */
+	/* border: none; */
+	border:  white double;
+	color: rgb(255, 255, 255);
 	outline: none;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color:black;
 }
 
 #confirm {
 	font-size: 1em;
 	padding: 6px;
 	margin-right: 10%;
-	background-color: rgba(19, 141, 255, 0.7);
+	background-color:transparent;
+	font-family: 'Press Start 2P', cursive;
 	border: none;
 	/* border: rgb(19, 141, 255) 1px solid; */
 	color: white;
 	box-shadow: none;
-	width: 10%;
+	text-shadow: 1px 1px  #0072E3;
+	/* width: 10%; */
 	display: block;
 	float: right;
-	border-bottom-right-radius: 20px;
+	/* border-bottom-right-radius: 20px; */
+}
+
+#confirm:hover {
+	text-shadow: 3px 3px  #0072E3;
 }
 
 #post:hover {
@@ -86,23 +96,26 @@ body{
 	/* right: 8% */
 }
 
+a {
+	cursor: pointer;
+}
+
 button{
-	border-radius: 12px;
+	/* border-radius: 12px; */
 	font-size: 16px;
 	position:relative;
 	bottom:-5px;
-}
-
-button:hover{
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
 }
 
 h1{
+	font-family: 'Press Start 2P', cursive;
 	text-align: center;
 	font-size: 240%;
 	text-shadow: 3px 3px 10px #0072E3;
 	color: white;
 	margin: 30px 0px 10px;
+	transform: scale(.6, 1);
 }
 
 .title{
@@ -112,8 +125,9 @@ h1{
 }
 
 .column {
+	margin: 5%;
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 
 .row:after {
@@ -131,65 +145,44 @@ h1{
 	width:40%;
 }
 
-.step1{
-	/*float: right;
-	width: 50%;
-	font-size: 20px;
-	position: relative;
-	right: 50px;
-	bottom:20px;*/
+.step{
 	font-size: 120%;
+	color: transparent;
 	text-shadow: 3px 3px 10px #0072E3;
+}
+
+#text1{
+
 	padding-top:3%;
 	padding-bottom:6%;
 }
 
-.step2{
-	/*float: right;
-	width: 50%;
-	position: relative;
-	right: -20px;
-	bottom:160px;
-	font-size: 20px*/
-	font-size: 120%;
-	text-shadow: 3px 3px 10px #0072E3;
+#text2{
 	padding-top:0%;
 	padding-left: 45%;
 	padding-bottom:0%;
 }
 
-.step3{
-	/*float: right;
-	width: 0%;
-	font-size: 20px;
-	position: relative;
-	bottom:60px;
-	right: 45px;
-	font-size: 20px*/
-	font-size: 120%;
-	text-shadow: 3px 3px 10px #0072E3;
+#text3{
 	padding-top:6%;
 	padding-bottom:5%;
 }
 
-.step4{
+#text4{
 	font-size: 100%;
-	text-shadow: 3px 3px 10px #0072E3;
 	padding-top:0px;
 	padding-bottom:6%;
 }
 
-.step5{
+#text5{
 	font-size: 100%;
-	text-shadow: 3px 3px 10px #0072E3;
 	padding-top:0%;
 	padding-left: 45%;
 	padding-bottom:0%;
 }
 
-.step6{
+#text6{
 	font-size: 100%;
-	text-shadow: 3px 3px 10px #0072E3;
 	padding-top:6%;
 	padding-bottom:5%;
 }
