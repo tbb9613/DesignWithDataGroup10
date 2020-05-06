@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        background:black;
+        color: white;
+    }
+</style>
+<body>
+<div id = 'title' style=' text-align: center; margin: 0 auto; margin-top: 100px;'>
+<h1>Machine Translation</h1>
+</div>
+<div id="lu_word_box1" style="font-family: 'Press Start 2P', cursive;float:left; left:200px; padding: 20px; margin: 0 auto; margin-left: 100px;border: 5px solid rgb(255, 60, 0);top: 30px;border-radius: 10px;">
+   
+</div>
+
+<div id="lu_word_box2" style="font-family: 'Press Start 2P', cursive;float:right; right:200px; padding: 20px; margin: 0 auto; margin-right: 100px ;border: 5px solid rgb(30, 225, 0);top: 30px;border-radius: 10px;">
+
+</div>
+<div id = 'title1' style=' text-align: center; margin: 0 auto; margin-top: 100px;'>
+    <h2 style="color: rgb(255, 60, 0);">Human Language</h2>
+    <h2>To</h2>
+    <h2 style="color: rgb(30, 225, 0);">Machine Language</h2>
+    <p style="margin-top: 300px; color: rgb(103, 236, 83);">*Please turn to anothoer side*</p>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/word.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //例子1
+        $('#lu_word_box').lu_word();
+        $('#set').click(function(){
+            $('#lu_word_box').setWord($('#word').val());
+        });
+        //例子2
+        var obj1 = {
+            text:["I like shopping and I always shopping online, buying foods, clothes, even some furnitures. " ,
+                "Recently, I want to buy a new iPhone.",
+                "IPhone is very expensive compared with other smart phones, but Apple provides more humanized services to customers",
+                ],//文本
+            color:"white",//字体和光标颜色
+            speed:100,//打字速度
+            sleep:3000,//回退停顿时间
+            width:"400",//宽度
+            height:"300",//高度
+            background:"#000",//背景颜色
+            sign:true//启动或停止
+        };
+        var obj2 = {
+            text:["00010111010010101011110101101000111110100010101010111010101010100100111011010010111010011011 " ,
+                "110101011101010100111010100101011101010 ",
+                "1010101110100001010101011110000101010001110101010111101010100011111010010010010110100001010111010010011001010",
+                ],//文本
+            color:"white",//字体和光标颜色
+            speed:100,//打字速度
+            sleep:3000,//回退停顿时间
+            width:"400",//宽度
+            height:"300",//高度
+            background:"#000",//背景颜色
+            sign:true//启动或停止
+        };
+        var box = $('#lu_word_box1');
+        box.lu_word(obj1);
+        var box = $('#lu_word_box2');
+        box.lu_word(obj2);
+        
+    });
+</script>
+
+</body>
+</html>

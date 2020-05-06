@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: #F2F7FB;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  float:right;
+  width: 800px;
+}
+.container__content {
+  width: 60%;
+}
+
+
+
+.textbox {
+  width: 70%;
+  resize: none;
+  background: linear-gradient(145deg, #F2F7FB, #E9F2FB);
+  box-shadow: inset 8px 8px 15px #D9E3EC;
+  border-radius: 12px;
+  border: none;
+  overflow: auto;
+  padding: 20px;
+  outline: none;
+  margin: 30px 0;
+}
+
+.textbox__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard {
+  padding: 15px;
+  background: linear-gradient(145deg, #F2F7FB, #E9F2FB);
+  box-shadow: 8px 8px 15px #D9E3EC;
+  border-radius: 12px;
+  min-width: 375px;
+  max-width: 500px;
+}
+.keyboard__keys {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  min-width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #F2F7FB, #E9F2FB);
+  box-shadow: 5px 5px 15px #D9E3EC;
+}
+.key__letter {
+  background: -webkit-linear-gradient(245deg, #1E71F5, #3CDEE7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.key__down {
+  color: linear-gradient(45deg, #1E71F5, #3CDEE7);
+  background: linear-gradient(145deg, #E9F2FB, #F2F7FB);
+  box-shadow: inset 5px 5px 5px #D9E3EC;
+}
+.key__space {
+  width: 60%;
+}
+
+.submit-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  margin-top: 50px;
+}
+
+.button {  
+  width: 200px;  
+  /* width: 100%; */
+  height: 50px;
+
+  padding:8px;  
+  background-color: #428bca;  
+  border-color: #357ebd;  
+  color: #fff;  
+  -moz-border-radius: 10px;  
+  -webkit-border-radius: 10px;  
+  border-radius: 10px; /* future proofing */  
+  -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+  text-align: center;  
+  vertical-align: middle;  
+  border: 1px solid transparent;  
+  font-weight: 900;  
+  font-size:125% ;
+  cursor: pointer;
+}  
+
+.button:hover{
+  background-color: #1379ED;  
+  transition: all .5s ease-in-out;
+}
