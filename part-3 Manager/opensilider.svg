@@ -1,9 +1,1 @@
-/*
- * @Author: your name
- * @Date: 2020-05-02 15:06:57
- * @LastEditTime: 2020-05-06 22:05:38
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: \flask nlp\Part-3 Manager\opensilider.svg
- */
 <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 24.52"><defs><style>.cls-1{fill:#8c6239;}.cls-2{fill:#8c6239;}.cls-3{font-size:11.17px;fill:#fff;font-family:HelveticaNeue, Helvetica Neue;}.cls-4{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><title>opensilider</title><rect class="cls-1" x="0.13" y="0.13" width="44.75" height="24.27" rx="9.55"/><path class="cls-2" d="M35.33,3a9.43,9.43,0,0,1,9.42,9.42v5.17A9.43,9.43,0,0,1,35.33,27H9.67A9.43,9.43,0,0,1,.25,17.56V12.39A9.43,9.43,0,0,1,9.67,3H35.33m0-.25H9.67A9.67,9.67,0,0,0,0,12.39v5.17a9.67,9.67,0,0,0,9.67,9.67H35.33A9.67,9.67,0,0,0,45,17.56V12.39a9.67,9.67,0,0,0-9.67-9.67Z" transform="translate(0 -2.72)"/><text class="cls-3" transform="translate(4.1 15.8)">OPEN</text><polyline class="cls-4" points="36.93 8.07 41.28 12.16 36.93 15.83"/></svg>
