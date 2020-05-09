@@ -1,9 +1,10 @@
-var maxstrlen=10;
+var maxstrlen=60;
 function Q(s){return document.getElementById(s);}
 function checkWord(c){
 	len=maxstrlen;
 	var str = c.value;
 	myLen=getStrleng(str);
+	// console.log(myLen)
 	//var wck=Q("wordCheck");
 	var Down = document.getElementById("Download");
 	if(myLen>len){
@@ -19,13 +20,13 @@ function checkWord(c){
 		if(per == 30 ){
 			changeColor2();
 		}
-		if(per == 40 ){
+		if(per == 50 ){
 			changeColor3();
 		}
-		if(per == 60 ){
+		if(per == 70 ){
 			changeColor4();
 		}
-		if(per == 80 ){
+		if(per == 90 ){
 			changeColor5();
 		}
 		if(per == 100 ){
